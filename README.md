@@ -324,5 +324,15 @@ $ npm start
     3. add order delete action to order list
 44. Deliver Order
     1. create constant, actions and reducers for deliver order
-    2. add order deliver action to order details screen#   F C B N E W S - E - C O M M - M E R N  
- 
+    2. add order deliver action to order details screen
+45. Publish To Heroku
+    1. Create git repository
+    2. Create heroku account
+    3. install Heroku CLI
+    4. heroku login
+    5. heroku apps:create <yourname>amazona
+    6. Edit package.json for build script
+    10. Create Procfile
+    12. Create mongodb atlas database
+    19. Set database connection in heroku env variables
+    20. Commit and push

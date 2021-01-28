@@ -5,19 +5,19 @@
   "description": "Ecommerce website like amazon",
   "main": "index.js",
   "scripts": {
-    "build":"cd frontend && npm install && npm run build",
+    "build": "cd frontend && npm install && npm run build",
     "start": "nodemon --watch backend --exec node --experimental-modules backend/server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AhmedAGM/FCBNEWS-E-COMM-MERN"
+    "url": "git+https://github.com/basir/amazona.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AhmedAGM/FCBNEWS-E-COMM-MERN/issues"
+    "url": "https://github.com/basir/amazona/issues"
   },
-  "homepage": "https://github.com/AhmedAGM/FCBNEWS-E-COMM-MERN#readme",
+  "homepage": "https://github.com/basir/amazona#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "dotenv": "^8.2.0",
@@ -32,5 +32,6 @@
     "eslint-plugin-react": "^7.21.2",
     "nodemon": "^2.0.4"
   },
-  "engines": {"node": "12.4.0", "npm":"6.9.0"}
+  "engines": {"node":"12.4.0", "npm": "6.9.0"}
+  
 }
