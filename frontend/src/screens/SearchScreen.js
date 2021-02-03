@@ -6,7 +6,7 @@ import LoadingBox from '../components/LoadingBox';
 import MessageBox from '../components/MessageBox';
 import Product from '../components/Product';
 import Rating from '../components/Rating';
-import { prices, ratings } from '../utils';
+import { prices, ratings } from '../utils.js';
 
 export default function SearchScreen(props) {
   const {
