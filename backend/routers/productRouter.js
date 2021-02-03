@@ -49,7 +49,7 @@ productRouter.post(
   isAuth,
   isSellerOrAdmin,
   expressAsyncHandler(async (req, res) => {
-    const Product = new Product({
+    const product = new Product({
       name: 'sample name ' + Date.now(),
       seller: req.user._id,
       image: '/images/p1.jpg',
@@ -61,19 +61,8 @@ productRouter.post(
       numReviews: 0,
       description: 'sample description',
     });
-    const seller = await User.findOne({ isSeller: true });
-    if (seller) {
-      const products = data.products.map((product) => ({
-        ...product,
-        seller: seller._id,
-      }));
-      const createdProducts = await Product.insertMany(products);
-      res.send({ createdProducts });
-    } else {
-      res
-        .status(500)
-        .send({ message: 'No seller found. first run /api/users/seed' });
-    }
+    const createdProduct = await product.save();
+    res.send({ message: 'Product Created', product: createdProduct });
   })
 );
 productRouter.put(
