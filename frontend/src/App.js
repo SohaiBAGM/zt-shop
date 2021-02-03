@@ -109,7 +109,7 @@ function App() {
           </div>
         </header>
         <main>
-        <Route path="/seller/:id" component={SellerScreen}></Route>
+          <Route path="/seller/:id" component={SellerScreen}></Route>
           <Route path="/cart/:id?" component={CartScreen}></Route>
           <Route path="/product/:id" component={ProductScreen} exact></Route>
           <Route
@@ -143,7 +143,7 @@ function App() {
             path="/user/:id/edit"
             component={UserEditScreen}
           ></AdminRoute>
-           <SellerRoute
+          <SellerRoute
             path="/productlist/seller"
             component={ProductListScreen}
           ></SellerRoute>
@@ -151,6 +151,7 @@ function App() {
             path="/orderlist/seller"
             component={OrderListScreen}
           ></SellerRoute>
+
           <Route path="/" component={HomeScreen} exact></Route>
         </main>
         <footer className="row center">All right reserved</footer>
