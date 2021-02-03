@@ -23,6 +23,7 @@ export default function Product(props) {
             <Link to={`/seller/${product.seller._id}`}>
               {product.seller.seller.name}
             </Link>
+            
           </div>
         </div>
       </div>
