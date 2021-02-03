@@ -23,7 +23,7 @@ export default function UserListScreen() {
           <thead>
             <tr>
               <th>ID</th>
-              <th>NAME</th>
+              <th>NAM</th>
               <th>EMAIL</th>
               <th>IS SELLER</th>
               <th>IS ADMIN</th>
